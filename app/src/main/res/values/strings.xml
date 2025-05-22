@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">FarmerApp</string>
+    <string name="etPassword">Пароль</string>
+    <string name="etPhone">Номер телефона</string>
+    <string name="user">Пользователь</string>
+    <string name="entrance">Вход</string>
+    <string name="main_nav_menu">Главная</string>
+    <string name="favourite_nav_menu">Избранное</string>
+    <string name="map_nav_menu">Карта</string>
+    <string name="profile_nav_menu">Профиль</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="registration">Регистрация</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="ibuyer">Я покупатель</string>
+    <string name="ifarmer">Я фермер</string>
 </resources>

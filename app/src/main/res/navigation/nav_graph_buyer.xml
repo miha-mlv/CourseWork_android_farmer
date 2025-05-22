@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:app="http://schemas.android.com/apk/res-auto"
-             android:id="@+id/nav_graph_buyer">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_buyer"
+    app:startDestination="@id/mainFragment">
 
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.farmerapp.presentation.buyer.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_favouriteProductFragment"
+            app:destination="@id/favouriteProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.farmerapp.presentation.buyer.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_mapFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.farmerapp.presentation.buyer.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/favouriteProductFragment"
+        android:name="com.example.farmerapp.presentation.buyer.FavouriteProductFragment"
+        android:label="fragment_favourite_product"
+        tools:layout="@layout/fragment_favourite_product" >
+        <action
+            android:id="@+id/action_favouriteProductFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
 </navigation>

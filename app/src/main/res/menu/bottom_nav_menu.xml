@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-  
+    <item
+        android:id="@+id/main"
+        android:title="@string/main_nav_menu"
+        android:icon="@drawable/icon_main"
+        />
+    <item
+        android:id="@+id/favourite"
+        android:title="@string/favourite_nav_menu"
+        android:icon="@drawable/icon_favorite"
+        />
+    <item
+        android:id="@+id/map"
+        android:title="@string/map_nav_menu"
+        android:icon="@drawable/icon_map"
+        />
+    <item
+        android:id="@+id/profile"
+        android:title="@string/profile_nav_menu"
+        android:icon="@drawable/icon_profile"
+        />
+
 </menu>

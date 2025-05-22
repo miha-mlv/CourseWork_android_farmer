@@ -1,14 +1,31 @@
-package com.example.farmerapp
+package com.example.farmerapp.presentation
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.farmerapp.databinding.ActivityMainBinding
+import com.example.farmerapp.presentation.buyer.AppActivity
+import com.example.farmerapp.presentation.buyer.EntranceActivity
 
 class MainActivity : AppCompatActivity() {
+    private val binding by lazy {
+        ActivityMainBinding.inflate(layoutInflater)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(binding.root)
+        setBtnClickListener()
     }
+
+
+    private fun setBtnClickListener() {
+        binding.btnForBuyer.setOnClickListener {
+            startActivity(EntranceActivity.getNewIntent(this))
+        }
+
+        binding.btnForFarmer.setOnClickListener {
+            TODO()
+        }
+    }
+
 }

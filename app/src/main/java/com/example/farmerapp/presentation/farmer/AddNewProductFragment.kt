@@ -1,4 +1,4 @@
-package com.example.farmerapp.presentation.buyer
+package com.example.farmerapp.presentation.farmer
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

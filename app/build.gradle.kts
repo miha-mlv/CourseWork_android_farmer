@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.farmerapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.farmerapp"
@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -45,4 +49,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //Jetpack Navigation
+    implementation ("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation ("androidx.navigation:navigation-ui-ktx:2.5.3")
 }
